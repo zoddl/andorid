@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="74dp"
+         >
+        <ImageView
+            android:paddingBottom="3dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:src="@drawable/icon10"
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp" />
+        <TextView
+            android:layout_marginTop="@dimen/dp_10"
+            android:padding="2dp"
+            android:textSize="13dp"
+            android:textColor="#000"
+            android:text="Testing"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:id="@+id/title_notify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/image"
+            />
+        <TextView
+            android:padding="2dp"
+            android:textSize="13dp"
+            android:textColor="@color/colorLightGray"
+            android:text="Testing is awecome"
+            android:id="@+id/message_notify"
+            android:maxLines="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/image"
+            android:layout_below="@id/title_notify"
+            />
+
+        <View
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_below="@+id/message_notify"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/placeholder_grey"/>
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,173 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorBluishGrayTransparent"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+
+                <com.zoddl.widgets.MyTextView
+                    android:id="@+id/tv_my_current_plan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:text="@string/my_current_plan"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="@dimen/text_size_20"
+                    app:fontName="@string/calibri_bold" />
+
+                <com.zoddl.widgets.MyTextView
+                    android:id="@+id/tv_free"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="@string/free"
+                    android:textColor="@color/colorRed"
+                    android:textSize="@dimen/text_size_20"
+                    app:fontName="@string/calibri_bold" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_plan_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/dp_5" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.zoddl.widgets.MyRadioButton
+                    android:id="@+id/cb_credit_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/button_toogle1"
+                    android:gravity="center_vertical"
+                    android:layout_margin="@dimen/dp_8"
+                    android:text="@string/credit_card"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/text_size_14"
+                    app:fontName="@string/helvetica_neue_normal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark" />
+
+                <com.zoddl.widgets.MyRadioButton
+                    android:id="@+id/cb_debit_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/button_toogle1"
+                    android:gravity="center_vertical"
+                    android:layout_margin="@dimen/dp_8"
+                    android:text="@string/debit_card"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/text_size_14"
+                    app:fontName="@string/helvetica_neue_normal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark" />
+
+                <com.zoddl.widgets.MyRadioButton
+                    android:id="@+id/cb_net_banking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/button_toogle1"
+                    android:gravity="center_vertical"
+                    android:layout_margin="@dimen/dp_8"
+                    android:text="@string/net_banking"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/text_size_14"
+                    app:fontName="@string/helvetica_neue_normal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark" />
+
+                <com.zoddl.widgets.MyRadioButton
+                    android:id="@+id/cb_pay_tm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/button_toogle1"
+                    android:gravity="center_vertical"
+                    android:layout_margin="@dimen/dp_8"
+                    android:text="@string/paytm"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/text_size_14"
+                    app:fontName="@string/helvetica_neue_normal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark" />
+
+            </RadioGroup>
+
+            <com.zoddl.widgets.MyCheckBox
+                android:id="@+id/cb_agree_terms_conditions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_12"
+                android:text="@string/i_agree_to_the_terms_and_conditions"
+                android:textColor="@color/colorLightGray"
+                app:fontName="@string/comic_neue_regular" />
+            <com.zoddl.widgets.MyTextView
+                android:id="@+id/cb_agree_terms_conditions_error"
+                style="@style/AppTheme.EditTextError"
+                android:layout_marginTop="-10dp"
+                android:layout_marginEnd="@dimen/dp_40"
+                android:layout_marginStart="@dimen/dp_40"
+                android:layout_marginBottom="@dimen/dp_10"
+                app:fontName="@string/helvetica_neue_light"/>
+
+
+            <com.zoddl.widgets.MyButton
+                android:id="@+id/btn_buy_now"
+                style="@style/AppTheme.Button"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:layout_marginEnd="@dimen/dp_40"
+                android:layout_marginStart="@dimen/dp_40"
+                android:text="@string/buy_now"
+                app:fontName="@string/calibri_bold" />
+
+            <com.zoddl.widgets.MyTextView
+                android:id="@+id/tv_payment_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBluishGrayTransparent"
+                android:maxLines="1"
+                android:padding="@dimen/dp_10"
+                android:text="@string/my_payment_histroy"
+                android:textColor="@color/colorBlue"
+                android:textSize="@dimen/text_size_20"
+                app:fontName="@string/calibri_bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_payment_history"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/dp_5">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</layout>

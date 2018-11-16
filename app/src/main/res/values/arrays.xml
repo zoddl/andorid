@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="drawer_array_text">
+        <item>Contact Us</item>
+        <item>My Settings</item>
+        <item>My Profile</item>
+        <item>Alert &amp; Notification</item>
+        <item>Make a Payment</item>
+        <item>How Its Work</item>
+        <item>FAQ\'s</item>
+        <item>Logout</item>
+    </string-array>
+</resources>

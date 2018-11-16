@@ -1,0 +1,23 @@
+{
+  "Version": "1.0",
+  "CredentialsProvider": {
+    "CognitoIdentity": {
+      "Default": {
+
+        "PoolId": "us-east-1:c1f7dd1b-be90-470f-84e6-b2ca8650b15d",
+        "Region": "us-east-1"
+      }
+    }
+  },
+  "IdentityManager" : {
+    "Default" : {
+
+    }
+  },
+  "S3TransferUtility": {
+    "Default": {
+      "Bucket": "zoddl-development",
+      "Region": "us-east-1"
+    }
+  }
+}

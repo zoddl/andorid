@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar_header"
+            layout="@layout/toolbar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_160">
+
+                    <FrameLayout
+                        android:layout_marginEnd="@dimen/dp_5"
+                        android:layout_marginStart="@dimen/dp_30"
+                        android:id="@+id/iv_profile_pic_ll"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    <com.zoddl.widgets.CircleImageView
+                        android:id="@+id/iv_profile_pic"
+                        android:layout_width="@dimen/dp_120"
+                        android:layout_height="@dimen/dp_120"
+                        android:src="@drawable/image1" />
+
+                        <ProgressBar
+                            android:id="@+id/profile_progress_bar"
+                            android:visibility="gone"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </FrameLayout>
+
+                    <com.zoddl.widgets.MyTextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_55"
+                        android:layout_toEndOf="@+id/iv_profile_pic_ll"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:paddingStart="@dimen/dp_15"
+                        android:textColor="@color/colorDarkGray"
+                        android:textSize="@dimen/text_size_22"
+                        app:fontName="@string/comic_neue_bold" />
+
+                    <com.zoddl.widgets.MyTextView
+                        android:id="@+id/tv_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_name"
+                        android:layout_toEndOf="@+id/iv_profile_pic_ll"
+                        android:drawablePadding="@dimen/dp_5"
+                        android:drawableStart="@mipmap/icon_1"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:paddingStart="@dimen/dp_10"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_size_16"
+                        app:fontName="@string/comic_neue_bold" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorNavyBlue" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_skype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:src="@mipmap/icon20" />
+
+                    <com.zoddl.widgets.MyTextView
+                        android:id="@+id/tv_skype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_20"
+                        android:layout_toEndOf="@+id/iv_skype"
+                        android:maxLines="1"
+                        android:text="@string/skype_id"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_size_16"
+                        app:fontName="@string/comic_neue_bold" />
+
+                    <com.zoddl.widgets.MyTextView
+                        android:id="@+id/tv_skype_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="@dimen/dp_20"
+                        android:layout_toRightOf="@+id/tv_skype"
+                        android:gravity="center_vertical|end"
+                        android:maxLines="1"
+                        android:textColor="@color/colorDarkGray"
+                        android:textSize="@dimen/text_size_14"
+                        app:fontName="@string/comic_neue_regular" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@id/iv_skype"
+                        android:layout_marginStart="@dimen/dp_50"
+                        android:background="@color/colorBlack" />
+
+                    <ImageView
+                        android:id="@+id/iv_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_skype"
+                        android:layout_marginStart="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:src="@mipmap/icon21" />
+
+                    <com.zoddl.widgets.MyTextView
+                        android:id="@+id/tv_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_skype"
+                        android:layout_margin="@dimen/dp_20"
+                        android:layout_toEndOf="@+id/iv_email"
+                        android:maxLines="1"
+                        android:text="@string/email"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_size_16"
+                        app:fontName="@string/comic_neue_bold" />
+
+                    <ImageView
+                        android:id="@+id/iv_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@id/iv_skype"
+                        android:layout_marginEnd="@dimen/dp_20"
+                        android:src="@drawable/icon47" />
+
+                    <com.zoddl.widgets.MyTextView
+                        android:id="@+id/tv_email_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@id/iv_skype"
+                        android:layout_margin="@dimen/dp_20"
+                        android:layout_toRightOf="@+id/tv_email"
+                        android:gravity="center_vertical|end"
+                        android:maxLines="1"
+                        android:textColor="@color/colorDarkGray"
+                        android:textSize="@dimen/text_size_14"
+                        app:fontName="@string/comic_neue_regular" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@id/iv_email"
+                        android:layout_marginStart="@dimen/dp_50"
+                        android:background="@color/colorBlack" />
+
+                    <ImageView
+                        android:id="@+id/iv_mobile_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_email"
+                        android:layout_marginStart="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:src="@mipmap/icon22" />
+
+                    <com.zoddl.widgets.MyTextView
+                        android:id="@+id/tv_mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_email"
+                        android:layout_margin="@dimen/dp_20"
+                        android:layout_toEndOf="@+id/iv_email"
+                        android:maxLines="1"
+                        android:text="@string/mobile_no"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_size_16"
+                        app:fontName="@string/comic_neue_bold" />
+
+                    <ImageView
+                        android:id="@+id/iv_check_email"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@id/iv_email"
+                        android:layout_marginEnd="@dimen/dp_20"
+                        android:src="@drawable/icon47" />
+
+                    <com.zoddl.widgets.MyTextView
+                        android:id="@+id/tv_mobile_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@id/iv_email"
+                        android:layout_margin="@dimen/dp_20"
+                        android:layout_toRightOf="@+id/tv_mobile"
+                        android:gravity="center_vertical|end"
+                        android:maxLines="1"
+                        android:textColor="@color/colorDarkGray"
+                        android:textSize="@dimen/text_size_14"
+                        app:fontName="@string/comic_neue_regular" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@id/iv_mobile_no"
+                        android:layout_marginStart="@dimen/dp_50"
+                        android:background="@color/colorBlack" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_mobile_no_alt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_mobile_no"
+                        android:layout_marginStart="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:src="@mipmap/icon22" />
+                    <com.zoddl.widgets.MyTextView
+                        android:id="@+id/tv_mobile_alt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_mobile_no"
+                        android:layout_margin="@dimen/dp_20"
+                        android:layout_toEndOf="@+id/iv_mobile_no_alt"
+                        android:maxLines="1"
+                        android:text="@string/alt_mobile_no"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_size_16"
+                        app:fontName="@string/comic_neue_bold" />
+
+                    <ImageView
+                        android:id="@+id/iv_check_alt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@id/iv_mobile_no"
+                        android:visibility="gone"
+                        android:layout_marginEnd="@dimen/dp_20"
+                        android:src="@drawable/icon47" />
+
+                    <com.zoddl.widgets.MyTextView
+                        android:id="@+id/tv_mobile_no_alt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@id/iv_mobile_no"
+                        android:layout_margin="@dimen/dp_20"
+                        android:layout_toRightOf="@+id/tv_mobile"
+                        android:gravity="center_vertical|end"
+                        android:maxLines="1"
+                        android:textColor="@color/colorDarkGray"
+                        android:textSize="@dimen/text_size_14"
+                        app:fontName="@string/comic_neue_regular" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@id/iv_mobile_no_alt"
+                        android:layout_marginStart="@dimen/dp_50"
+                        android:background="@color/colorBlack" />
+
+                    <ImageView
+                        android:id="@+id/iv_pan_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_mobile_no_alt"
+                        android:layout_marginStart="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:src="@mipmap/icon23" />
+
+                    <com.zoddl.widgets.MyTextView
+                        android:id="@+id/tv_pan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_mobile_no_alt"
+                        android:layout_margin="@dimen/dp_20"
+                        android:layout_toEndOf="@+id/iv_pan_no"
+                        android:maxLines="1"
+                        android:text="@string/my_pan_no"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_size_16"
+                        app:fontName="@string/comic_neue_bold" />
+
+                    <com.zoddl.widgets.MyTextView
+                        android:id="@+id/tv_pan_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@id/iv_mobile_no_alt"
+                        android:layout_margin="@dimen/dp_20"
+                        android:layout_toRightOf="@+id/tv_pan"
+                        android:gravity="center_vertical|end"
+                        android:maxLines="1"
+                        android:textColor="@color/colorDarkGray"
+                        android:textSize="@dimen/text_size_14"
+                        app:fontName="@string/comic_neue_regular" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@id/iv_pan_no"
+                        android:layout_marginStart="@dimen/dp_50"
+                        android:background="@color/colorBlack" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_aadhar_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_pan_no"
+                        android:layout_marginStart="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:src="@mipmap/icon24" />
+
+                    <com.zoddl.widgets.MyTextView
+                        android:id="@+id/tv_aadhar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_pan_no"
+                        android:layout_margin="@dimen/dp_20"
+                        android:layout_toEndOf="@+id/iv_aadhar_no"
+                        android:maxLines="1"
+                        android:text="@string/my_aadhar_no"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_size_16"
+                        app:fontName="@string/comic_neue_bold" />
+
+                    <com.zoddl.widgets.MyTextView
+                        android:id="@+id/tv_aadhar_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@id/iv_pan_no"
+                        android:layout_margin="@dimen/dp_20"
+                        android:layout_toRightOf="@+id/tv_aadhar"
+                        android:gravity="center_vertical|end"
+                        android:maxLines="1"
+                        android:textColor="@color/colorDarkGray"
+                        android:textSize="@dimen/text_size_14"
+                        app:fontName="@string/comic_neue_regular" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@id/iv_aadhar_no"
+                        android:layout_marginStart="@dimen/dp_50"
+                        android:background="@color/colorBlack" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_aadhar_no"
+                        android:layout_marginStart="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:src="@mipmap/icon_gen" />
+
+                    <com.zoddl.widgets.MyTextView
+                        android:id="@+id/tv_gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_aadhar_no"
+                        android:layout_margin="@dimen/dp_20"
+                        android:layout_toEndOf="@+id/iv_gender"
+                        android:maxLines="1"
+                        android:text="@string/gender"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_size_16"
+                        app:fontName="@string/comic_neue_bold" />
+
+                    <com.zoddl.widgets.MyTextView
+                        android:id="@+id/tv_genders"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@id/iv_aadhar_no"
+                        android:layout_margin="@dimen/dp_20"
+                        android:layout_toRightOf="@+id/tv_gender"
+                        android:gravity="center_vertical|end"
+                        android:maxLines="1"
+                        android:textColor="@color/colorDarkGray"
+                        android:textSize="@dimen/text_size_14"
+                        app:fontName="@string/comic_neue_regular" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@id/iv_gender"
+                        android:layout_marginStart="@dimen/dp_50"
+                        android:background="@color/colorBlack" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_dob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_gender"
+                        android:layout_marginStart="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:src="@mipmap/icon25" />
+
+                    <com.zoddl.widgets.MyTextView
+                        android:id="@+id/tv_dob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_gender"
+                        android:layout_margin="@dimen/dp_20"
+                        android:layout_toEndOf="@+id/iv_dob"
+                        android:maxLines="1"
+                        android:text="@string/dob"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_size_16"
+                        app:fontName="@string/comic_neue_bold" />
+
+                    <com.zoddl.widgets.MyTextView
+                        android:id="@+id/tv_date_of_birth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@id/iv_gender"
+                        android:layout_margin="@dimen/dp_20"
+                        android:layout_toRightOf="@+id/tv_dob"
+                        android:gravity="center_vertical|end"
+                        android:maxLines="1"
+                        android:textColor="@color/colorDarkGray"
+                        android:textSize="@dimen/text_size_14"
+                        app:fontName="@string/comic_neue_regular" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@id/iv_dob"
+                        android:layout_marginStart="@dimen/dp_50"
+                        android:background="@color/colorBlack" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_gstn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_dob"
+                        android:layout_marginStart="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:src="@mipmap/icon26" />
+
+                    <com.zoddl.widgets.MyTextView
+                        android:id="@+id/tv_gstn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_dob"
+                        android:layout_margin="@dimen/dp_20"
+                        android:layout_toEndOf="@+id/iv_gstn"
+                        android:maxLines="1"
+                        android:text="@string/gstn"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_size_16"
+                        app:fontName="@string/comic_neue_bold" />
+
+
+                    <com.zoddl.widgets.MyTextView
+                        android:id="@+id/tv_gstn1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@id/iv_dob"
+                        android:layout_margin="@dimen/dp_20"
+                        android:layout_toRightOf="@+id/tv_gstn"
+                        android:gravity="center_vertical|end"
+                        android:maxLines="1"
+                        android:textColor="@color/colorDarkGray"
+                        android:textSize="@dimen/text_size_14"
+                        app:fontName="@string/comic_neue_regular" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@id/iv_gstn"
+                        android:layout_marginStart="@dimen/dp_50"
+                        android:background="@color/colorBlack" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,401 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:scrollbars="vertical">
+
+        <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_12">
+
+                <com.zoddl.widgets.MyTextView
+                    android:id="@+id/tv_setting_gal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="@string/setting_allow_zoddl_to_gal"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/text_size_16"
+                    app:fontName="@string/helvetica_neue_light" />
+
+                <CheckBox
+                    android:id="@+id/cb_setting_gal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/toggle_button"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBluishGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_12">
+
+                <com.zoddl.widgets.MyTextView
+                    android:id="@+id/tv_setting_doc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="@string/setting_allow_zoddl_to_doc"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/text_size_16"
+                    app:fontName="@string/helvetica_neue_light" />
+
+                <CheckBox
+                    android:id="@+id/cb_setting_doc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/toggle_button"
+                    android:checked="false" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBluishGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_12">
+
+                <com.zoddl.widgets.MyTextView
+                    android:id="@+id/tv_setting_report"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="@string/setting_allow_zoddl_to_report"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/text_size_16"
+                    app:fontName="@string/helvetica_neue_light" />
+
+                <CheckBox
+                    android:id="@+id/cb_setting_report"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/toggle_button"
+                    android:checked="false" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBluishGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_12">
+
+                <com.zoddl.widgets.MyTextView
+                    android:id="@+id/tv_setting_free_paid"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="@string/setting_free_paid"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/text_size_16"
+                    app:fontName="@string/helvetica_neue_light" />
+
+                <CheckBox
+                    android:id="@+id/cb_setting_free_paid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/toggle_button"
+                    android:checked="false" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBluishGray" />
+
+                <com.zoddl.widgets.MyTextView
+                    android:id="@+id/tv_setting_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/icon32"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:padding="@dimen/dp_12"
+                    android:text="About Us"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/text_size_16"
+                    app:fontName="@string/helvetica_neue_light"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBluishGray" />
+
+            <LinearLayout
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_12">
+
+                <com.zoddl.widgets.MyTextView
+                    android:id="@+id/tv_self_tagging"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="@string/self"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/text_size_16"
+                    app:fontName="@string/helvetica_neue_light"/>
+
+                <CheckBox
+                    android:id="@+id/cb_self_tagging"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/toggle_button"
+                    android:checked="false" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBluishGray" />
+
+            <LinearLayout
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_12">
+
+                <com.zoddl.widgets.MyTextView
+                    android:id="@+id/tv_personal_folder"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="@string/personal_folder"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/text_size_16"
+                    app:fontName="@string/helvetica_neue_light"/>
+                <CheckBox
+                    android:id="@+id/cb_personal_folder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/toggle_button"
+                    android:checked="false" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBluishGray" />
+
+            <LinearLayout
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_12">
+
+                <com.zoddl.widgets.MyTextView
+                    android:id="@+id/tv_personal_img_gallery"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="@string/personal_images_gallery"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/text_size_16"
+                    app:fontName="@string/helvetica_neue_light"/>
+
+                <CheckBox
+                    android:id="@+id/cb_img_gallary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/toggle_button"
+                    android:checked="false" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBluishGray" />
+
+            <LinearLayout
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_12">
+
+                <com.zoddl.widgets.MyTextView
+                    android:id="@+id/tv_show_cloud_disk"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="@string/show_cloud_disk"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/text_size_16"
+                    app:fontName="@string/helvetica_neue_light"/>
+
+                <CheckBox
+                    android:id="@+id/cb_cloud_disk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/toggle_button"
+                    android:checked="false" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBluishGray" />
+
+            <LinearLayout
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_12">
+
+                <com.zoddl.widgets.MyTextView
+                    android:id="@+id/tv_free_cloud_disk"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="@string/free_cloud_disk"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/text_size_16"
+                    app:fontName="@string/helvetica_neue_light"/>
+
+                <com.zoddl.widgets.MyTextView
+                    android:id="@+id/sb_free_cloud_disk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/text_size_16"
+                    app:fontName="@string/helvetica_neue_light"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBluishGray" />
+
+            <LinearLayout
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_12">
+
+                <com.zoddl.widgets.MyTextView
+                    android:id="@+id/tv_push_notifications"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="@string/push_notifications"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/text_size_16"
+                    app:fontName="@string/helvetica_neue_light"/>
+
+                <CheckBox
+                    android:id="@+id/cb_push_notifications"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/toggle_button"
+                    android:checked="false" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBluishGray" />
+
+            <LinearLayout
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_12">
+
+                <com.zoddl.widgets.MyTextView
+                    android:id="@+id/tv_auto_sync"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="@string/auto_sync"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/text_size_16"
+                    app:fontName="@string/helvetica_neue_light"
+                    />
+
+                <CheckBox
+                    android:id="@+id/cb_auto_sync"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/toggle_button"
+                    android:checked="false" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBluishGray" />
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

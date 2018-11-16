@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#C7C7C7</color>
+    <color name="colorAccent">#1F1F1F</color>
+
+    <color name="colorNavyBlue">#1A2A5A</color>
+    <color name="colorFBBlue">#4862A3</color>
+    <color name="colorLightRed">#F75353</color>
+    <color name="colorLightBlue">#1EBDE7</color>
+    <color name="colorBlue">#1096B9</color>
+    <color name="colorDarkGray">#1F1F1F</color>
+
+    <color name="colorGray">#585858</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorLighterBlue">#591EBDE7</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBluishGray">#D1D4DE</color>
+    <color name="colorBluishGrayTransparent">#90D1D4DE</color>
+    <color name="colorLightGray">#606060</color>
+    <color name="colorRed">#F72626</color>
+    <color name="colorGreen">#00CD6F</color>
+
+    <color name="colorCamBlue">#61A4DE</color>
+    <color name="colorCamYellow">#FAD162</color>
+    <color name="colorCamGreen">#01AC4E</color>
+    <color name="colorCamRed">#FF4141</color>
+
+
+    <color name="colorTagBPlus">#148fcc</color>
+    <color name="colorTagBMinus">#cbe8f5</color>
+    <color name="colorTagCPlus">#24d4cb</color>
+    <color name="colorTagCMinus">#bdf0ee</color>
+    <color name="colorTagOther">#f0f4f5</color>
+
+    <color name="colorTagText">#4d4d4d</color>
+
+
+    <color name="secondary_text">#727272</color>
+    <color name="secondary_text_transparent_70">#B3727272</color>
+    <color name="trans_black_25">#40000000</color>
+    <color name="chrome_grey">#F2F2F2</color>
+
+    <color name="placeholder_grey">#AAADC4</color>
+    <color name="placeholder_grey_20">#33AAADC4</color>
+</resources>

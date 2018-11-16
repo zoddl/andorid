@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:gravity="start">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_background"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <com.zoddl.widgets.MyTextView
+            android:id="@+id/tv_attach_file"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_10"
+            android:text="Attach file"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/text_size_16"
+            app:fontName="@string/helvetica_neue_normal" />
+
+        <com.zoddl.widgets.MyTextView
+            android:id="@+id/tv_insert_from_drive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_10"
+            android:text="Insert from Drive"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/text_size_16"
+            app:fontName="@string/helvetica_neue_normal" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

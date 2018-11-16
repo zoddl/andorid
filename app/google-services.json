@@ -1,0 +1,70 @@
+{
+  "project_info": {
+    "project_number": "610475345468",
+    "firebase_url": "https://zoddl-197112.firebaseio.com",
+    "project_id": "zoddl-197112",
+    "storage_bucket": "zoddl-197112.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:610475345468:android:cf4e882bbb60abc8",
+        "android_client_info": {
+          "package_name": "com.zoddl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "610475345468-n08dr6ltcvdqfels2sojiuop7jq75b5l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zoddl",
+            "certificate_hash": "7ae7ce9a57fafc2518439468298b90091c1bf263"
+          }
+        },
+        {
+          "client_id": "610475345468-2jrkllps41s3b3p9sd9t8ol3pm2cqivu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zoddl",
+            "certificate_hash": "8b9a7aeb7795c74c3c4db1a3624476c7f13a4b95"
+          }
+        },
+        {
+          "client_id": "610475345468-u0sa73u1uv706ffqd5747jld1tn83fvd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAH8wMrJWszO3gxPMcDBCJrUj0d65bFymE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "610475345468-u0sa73u1uv706ffqd5747jld1tn83fvd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "610475345468-034ab2pe0ggp2r9rpe6cqnq739nqo65b.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.wissen.Zoddl"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

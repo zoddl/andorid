@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PresetValueButton">
+        <attr name="presetButtonValueText" format="integer"/>
+        <attr name="presetButtonValueTextColor" format="color"/>
+        <attr name="presetButtonValueBackground" format="color"/>
+        <attr name="presetButtonPressedTextColor" format="color"/>
+    </declare-styleable>
+</resources>

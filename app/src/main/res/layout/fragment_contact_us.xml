@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_32">
+
+                <com.zoddl.widgets.MyEditText
+                    android:id="@+id/et_name"
+                    style="@style/AppTheme.EditText"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:hint="@string/name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName|textCapWords"
+                    android:maxLength="80"
+                    app:fontName="@string/helvetica_neue_light" />
+
+                <com.zoddl.widgets.MyTextView
+                    android:id="@+id/tv_name_error"
+                    style="@style/AppTheme.EditTextError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:fontName="@string/helvetica_neue_light" />
+
+                <com.zoddl.widgets.MyEditText
+                    android:id="@+id/et_email"
+                    style="@style/AppTheme.EditText"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:hint="@string/email"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="80"
+                    app:fontName="@string/helvetica_neue_light" />
+
+                <com.zoddl.widgets.MyTextView
+                    android:id="@+id/tv_email_error"
+                    style="@style/AppTheme.EditTextError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:fontName="@string/helvetica_neue_light" />
+
+                <com.zoddl.widgets.MyEditText
+                    android:id="@+id/et_mobile_number"
+                    style="@style/AppTheme.EditText"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:hint="@string/mobile_number"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:maxLength="16"
+                    app:fontName="@string/helvetica_neue_light" />
+
+                <com.zoddl.widgets.MyTextView
+                    android:id="@+id/tv_mobile_number_error"
+                    style="@style/AppTheme.EditTextError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:fontName="@string/helvetica_neue_light" />
+
+                <com.zoddl.widgets.MyEditText
+                    android:id="@+id/et_message"
+                    style="@style/AppTheme.EditText"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:hint="@string/message"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLength="120"
+                    app:fontName="@string/helvetica_neue_light" />
+
+                <com.zoddl.widgets.MyTextView
+                    android:id="@+id/tv_message_error"
+                    style="@style/AppTheme.EditTextError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:fontName="@string/helvetica_neue_light" />
+
+                <com.zoddl.widgets.MyButton
+                    android:id="@+id/btn_send"
+                    style="@style/AppTheme.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:text="@string/send"
+                    app:fontName="@string/calibri_bold" />
+            </LinearLayout>
+
+            <com.zoddl.widgets.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBluishGrayTransparent"
+                android:padding="@dimen/dp_10"
+                android:text="@string/you_can_also_reach_us_at"
+                android:textColor="@color/colorBlue"
+                android:textSize="@dimen/text_size_20"
+                app:fontName="@string/calibri_bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+
+
+                <com.zoddl.widgets.MyTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/dp_10"
+                    android:drawableStart="@drawable/icon33"
+                    android:gravity="center_vertical"
+                    android:text="Email"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/text_size_16"
+                    app:fontName="@string/helvetica_neue_light" />
+
+                <com.zoddl.widgets.MyTextView
+                    android:id="@+id/tv_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/text_size_16"
+                    app:fontName="@string/helvetica_neue_light" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+
+
+                <com.zoddl.widgets.MyTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/dp_10"
+                    android:drawableStart="@drawable/icon34"
+                    android:gravity="center_vertical"
+                    android:text="@string/mobile"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/text_size_16"
+                    app:fontName="@string/helvetica_neue_light" />
+
+                <com.zoddl.widgets.MyTextView
+                    android:id="@+id/tv_mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/text_size_16"
+                    app:fontName="@string/helvetica_neue_light" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+
+                <com.zoddl.widgets.MyTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/dp_10"
+                    android:drawableStart="@drawable/icon35"
+                    android:gravity="center_vertical"
+                    android:text="@string/website"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/text_size_16"
+                    app:fontName="@string/helvetica_neue_light" />
+
+                <com.zoddl.widgets.MyTextView
+                    android:id="@+id/tv_website"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/text_size_16"
+                    app:fontName="@string/helvetica_neue_light" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <com.zoddl.widgets.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBluishGrayTransparent"
+                android:padding="@dimen/dp_10"
+                android:text="@string/my_past_messages"
+                android:textColor="@color/colorBlue"
+                android:textSize="@dimen/text_size_20"
+                app:fontName="@string/calibri_bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_past_messages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_5" />
+
+
+            <com.zoddl.widgets.MyTextView
+                android:id="@+id/no_records"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:text="@string/no_record_found"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</layout>

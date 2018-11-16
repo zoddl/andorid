@@ -1,0 +1,187 @@
+<resources>
+    <string name="app_name">Zoddl</string>
+
+    <string name="facebook_app_id">209873076438160</string>
+    <string name="fb_login_protocol_scheme">fb209873076438160</string>
+
+    <!--strings for font name attributes-->
+    <string name="helvetica_neue_ultra_light">helvetica_neue_ultra_light.ttf</string>
+    <string name="helvetica_neue_light">helvetica_neue_light.ttf</string>
+    <string name="helvetica_neue_medium_bold">helvetica_neue_medium_bold.ttf</string>
+    <string name="helvetica_neue_normal">helvetica_neue_normal.ttf</string>
+    <string name="calibri_regular">calibri_regular.ttf</string>
+    <string name="calibri_light">calibri_light.ttf</string>
+    <string name="calibri_bold">calibri_bold.ttf</string>
+    <string name="nunito_bold">nunito_bold.ttf</string>
+    <string name="nunito_regular">nunito_regular.ttf</string>
+    <string name="nunito_light">nunito_light.ttf</string>
+    <string name="comic_neue_regular">comic_neue_regular.ttf</string>
+    <string name="comic_neue_bold">comic_neue_bold.ttf</string>
+    <string name="comic_neue_light">comic_neue_light.ttf</string>
+
+
+    <string name="email_id_new_user_email">Email ID / New User Email ID</string>
+    <string name="password_new_user_password">Password / New User Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="or">OR</string>
+    <string name="log_in">Log In</string>
+
+    <string name="five_star"><center-vertical>*****</center-vertical></string>
+    <string name="exit_alert_dialog_text">Are you sure you want to exit?</string>
+    <string name="logout_alert_dialog_text">Are you sure you want to logout?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="ok">OK</string>
+
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="submit">Submit</string>
+    <string name="get_lastest_american_tv">Get Lastest</string>
+
+    <string name="cash">Cash+</string>
+    <string name="_02_08_1996">02.08.1996</string>
+    <string name="xyz_123">XYZ_123</string>
+    <string name="save">Save</string>
+    <string name="my_aadhar_no">My Aadhar No.</string>
+    <string name="gstn">GSTN</string>
+    <string name="mobiloitte">Mobiloitte</string>
+    <string name="skype_id">Skype ID</string>
+    <string name="company_name">Company Name</string>
+    <string name="delhi">Delhi</string>
+    <string name="city">City</string>
+    <string name="_123456789012">123456789012</string>
+    <string name="_25df5f2">25DF5F2</string>
+    <string name="my_pan_no">My PAN No.</string>
+    <string name="_01_07_2017">01/07/2017</string>
+    <string name="dob">DOB</string>
+    <string name="male">Male</string>
+    <string name="gender">Gender</string>
+    <string name="_919999999999">+919999999999</string>
+    <string name="alt_mobile_no">Alt Mobile No</string>
+    <string name="xyz_abc_com">xyz@abc.com</string>
+    <string name="email">Email</string>
+    <string name="deo">Deo</string>
+    <string name="last_name">Last Name</string>
+    <string name="john">John</string>
+    <string name="first_name">First Name</string>
+
+    <string name="please_enter_the_otp_send_to_your_registered_mobile_number">Please enter the OTP send to your registered mobile number.</string>
+
+    <string name="_12_06_2017">12/06/2017:</string>
+    <string name="ques_1_lorem_ipsum_dolor_sit_amet">Ques 1:Lorem ipsum dolor sit amet?</string>
+    <string name="untagged_20">Untagged (20)</string>
+    <string name="rs_2_450">Rs 2,450</string>
+    <string name="see_all">See All</string>
+    <string name="_25_june_2017">25 june 2017</string>
+    <string name="tag1_tag2_tag3">Tag1,Tag2,Tag3, Lorem Ipsum</string>
+    <string name="add_tag">Add Tag</string>
+    <string name="date">Date</string>
+    <string name="tag_name">Add Primary Tag Like Petrol, Income</string>
+    <string name="amount">Amount</string>
+    <string name="description">Description Like My receipt from Mr. </string>
+    <string name="cancel">Cancel</string>
+    <string name="gst_update">GST Update</string>
+    <string name="reports_available">Reports Available</string>
+    <string name="tex_rates_change">Tax Rates Change</string>
+    <string name="name">Name</string>
+    <string name="message">Message</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="send">Send</string>
+    <string name="my_past_messages">My Past Messages</string>
+    <string name="www_abc_com">www.abc.com</string>
+    <string name="website">Website</string>
+    <string name="mobile">Mobile</string>
+    <string name="you_can_also_reach_us_at">You can also reach us at</string>
+    <string name="my_payment_histroy">My Payment Histroy</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="net_banking">Net Banking</string>
+    <string name="paytm">PayTM</string>
+    <string name="debit_card">Debit Card</string>
+    <string name="credit_card">Credit Card</string>
+    <string name="comment">Comment</string>
+    <string name="ref_if_any">Ref if any</string>
+    <string name="make_a_payment_to_clickaccounting">Make a payment to Zoddl</string>
+    <string name="rate_click_accounting_app">Rate Zoddl App</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="restore_purchase">Restore Purchase</string>
+    <string name="about_us">About Us</string>
+    <string name="app_version">App Version</string>
+    <string name="auto_sync">Auto Sync</string>
+    <string name="push_notifications">Push Notifications</string>
+    <string name="free_cloud_disk">Free Cloud Disk</string>
+    <string name="show_cloud_disk">Show Cloud Disk</string>
+    <string name="personal_images_gallery">Personal Images Gallery</string>
+    <string name="personal_folder">Personal Folder</string>
+    <string name="self">Self Tagging</string>
+    <string name="change_password">Change Password</string>
+    <string name="username">Username</string>
+    <string name="auto_optimise_my_image">Auto Optimise My Image</string>
+    <string name="auto_process_my_image">Auto Process My Image</string>
+    <string name="enable_trash">Enable Trash</string>
+    <string name="sync_over">Sync Over Data(3G/4G)</string>
+    <string name="my_current_plan">My Current Plan</string>
+    <string name="free">Free</string>
+    <string name="i_agree_to_the_terms_and_conditions"><![CDATA[I agree to the terms & conditions]]></string>
+    <string name="buy_now">Buy Now</string>
+    <string name="cameron_brown">Cameron Brown</string>
+    <string name="mobiloitte_new_delhi">Mobiloitte, New Delhi</string>
+    <string name="mobiloittte_688">mobiloitte_688</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="_8080402102">8090402102</string>
+    <string name="_8092">8092</string>
+    <string name="plan_a_rs_1000_per_month">Plan A : Rs 1000 Per Month</string>
+    <string name="field_1">Field 1</string>
+    <string name="manual_payment_accounting">Manual Payment, accounting</string>
+    <string name="please_enter_amount">*Please enter amount.</string>
+    <string name="please_enter_ref">*Please enter Ref.</string>
+    <string name="please_enter_comment">*Please enter comment.</string>
+    <string name="please_enter_name">*Please enter name.</string>
+    <string name="error_in_picture">Error in picture</string>
+    <string name="please_enter_first_name">Please enter first name.</string>
+    <string name="please_enter_last_name">Please enter last name.</string>
+    <string name="please_enter_email">Please enter email id</string>
+    <string name="camera_error">Camera error</string>
+    <string name="pls_check_your_internet_connection">Please check your internet conection and try again.</string>
+    <string name="server_error">Server error.</string>
+    <string name="no_record_found">No Record Found</string>
+    <string name="add_secondary_tag">Add Secondary Tag Like Office, Personal ect</string>
+
+    <string name="title_time_preset_30">Cash +</string>
+    <string name="unit_seconds">Seconds</string>
+    <string name="title_time_preset_120">120</string>
+    <string name="title_time_preset_60">Cash -</string>
+    <string name="title_settings_set_duration">Set duration</string>
+    <string name="crash_toast_text">Crashed Report ready to send</string>
+
+    <string name="msg_no_internet">No Internet Connection!</string>
+    <string name="congratulations">Congratulations!</string>
+
+    <string name="key_google_api_key">AIzaSyCaDwiulZ42wEB-j3IKjZRQRzZ5xkNthIA</string>
+    <string name="key_google_project_id">1023531168818-jj9jqbv0v9k65ivtbdc3dc3sjanun618.apps.googleusercontent.com</string>
+
+
+    <string name="btn_retry">Retry</string>
+    <string name="error_msg_no_internet">Not connected to internet</string>
+    <string name="error_msg_timeout">The server took too long to respond</string>
+    <string name="error_msg_unknown">An unexpected error occurred</string>
+    <string name="tap_to_reload">Tap to reload</string>
+
+
+    <string name="setting_allow_zoddl_to_gal">Allow Zoddl to view your Gallery</string>
+    <string name="setting_allow_zoddl_to_doc">Allow Zoddl to view your Documents</string>
+    <string name="setting_allow_zoddl_to_report">Allow Zoddl to view your Report</string>
+    <string name="setting_free_paid">Free/Paid</string>
+
+    <string name="setting_about_us">Brain Behind the App: We are Chartered Accountants having expertise
+in bookkeeping and Tax worldwide.
+</string>
+    <string name="setting_about_us2">
+Wissen India, the company is part of group companies as the second
+generation chartered accountants practicing in India, being in the
+profession for over 24 years.</string>
+
+</resources>

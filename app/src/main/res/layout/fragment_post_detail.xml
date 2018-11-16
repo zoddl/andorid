@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="data"
+            type="com.zoddl.model.gallery.ImagesItem"/>
+
+    </data>
+
+    <android.support.v4.widget.NestedScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/dp_100">
+
+                <FrameLayout
+                    android:background="@color/colorWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <com.github.chrisbanes.photoview.PhotoView
+                        android:id="@+id/iv_item_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/app_placeholder"
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/progress_bar"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:indeterminate="true"
+                        android:indeterminateTintMode="src_atop"
+                        android:indeterminateTint="@color/colorPrimaryDark"/>
+
+                    <WebView
+                        android:id="@+id/post_details_lib_viewer"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"/>
+
+                    <ImageView
+                        android:layout_marginLeft="30dp"
+                        android:id="@+id/img_crop"
+                        android:visibility="gone"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/icon13"
+                        />
+                    <ImageView
+                        android:visibility="gone"
+                        android:layout_width="150dp"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop" />
+
+                    <com.zoddl.widgets.MyTextView
+                        android:id="@+id/tv_tag_name"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="bottom"
+                        android:paddingBottom="@dimen/dp_5"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:paddingRight="@dimen/dp_10"
+                        android:paddingTop="@dimen/dp_5"
+                        android:text="@{data.primaryTag}"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <com.zoddl.widgets.MyTextView
+                        android:id="@+id/tv_cash"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|bottom"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/dp_5"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:paddingRight="@dimen/dp_10"
+                        android:paddingTop="@dimen/dp_5"
+                        android:text="@{data.tagType}"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_size_14"
+                        app:fontName="@string/helvetica_neue_light" />
+                </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_8"
+                android:layout_marginStart="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_5">
+
+                <com.zoddl.widgets.MyTextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:padding="@dimen/dp_5"
+                    android:text="@{data.tagSendDate}"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_size_16"
+                    app:fontName="@string/helvetica_neue_light" />
+
+                <ImageView
+                    android:id="@+id/iv_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_5"
+                    android:src="@drawable/icon9" />
+
+                <ImageView
+                    android:id="@+id/iv_download"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_5"
+                    android:src="@drawable/icon40" />
+
+                <ImageView
+                    android:id="@+id/iv_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_delete" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@color/colorPrimaryDark" />
+
+            <FrameLayout
+                android:id="@+id/cover_edit_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.zoddl.widgets.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs."/>
+            <com.zoddl.widgets.MyEditText
+                android:id="@+id/tv_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{data.amount}"
+                android:background="@android:color/transparent"
+                android:hint=" enter amount"
+                android:imeOptions="actionNext"
+                android:maxLength="6"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_size_16"
+                app:fontName="@string/helvetica_neue_normal" />
+                </LinearLayout>
+
+                <EditText
+                android:id="@+id/tv_description_post_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_15"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:layout_marginStart="@dimen/dp_12"
+                android:background="@android:color/transparent"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/text_size_16"
+                android:hint="Add Description" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@color/colorPrimaryDark" />
+
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:layout_marginEnd="@dimen/dp_8"
+                android:layout_marginStart="@dimen/dp_8"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:text=""
+                android:textSize="@dimen/dp_15"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorWhite"
+                android:maxLines="1"
+                android:background="@drawable/button_tag"
+                android:completionThreshold="0"
+                app:fontName="@string/helvetica_neue_light" />
+
+                <com.hootsuite.nachos.NachoTextView
+                    android:id="@+id/tv_primary_tag_name_post_details"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:layout_marginEnd="@dimen/dp_8"
+                    android:layout_marginStart="@dimen/dp_8"
+                    android:completionThreshold="0"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/tag_name"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/colorPrimaryDark" />
+            <com.hootsuite.nachos.NachoTextView
+                android:id="@+id/rv_tag_2"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:layout_marginEnd="@dimen/dp_8"
+                android:layout_marginStart="@dimen/dp_8"
+                android:completionThreshold="0"
+                android:background="@android:color/transparent"
+                android:hint="@string/add_secondary_tag"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SGST: "/>
+                    <com.zoddl.widgets.MyEditText
+                        android:background="@android:color/transparent"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:id="@+id/tv_sgst_post_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/colorPrimaryDark" />
+
+                <LinearLayout
+                    android:layout_marginEnd="@dimen/dp_5"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CGST: "/>
+                <com.zoddl.widgets.MyEditText
+                    android:background="@android:color/transparent"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"
+                    android:id="@+id/tv_cgst_post_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/colorPrimaryDark" />
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:layout_marginBottom="@dimen/dp_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IGST:  "/>
+                    <com.zoddl.widgets.MyEditText
+                        android:background="@android:color/transparent"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:id="@+id/tv_igst_post_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            </LinearLayout>
+
+
+            </FrameLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</layout>

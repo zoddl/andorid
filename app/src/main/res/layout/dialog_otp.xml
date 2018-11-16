@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/dialog_background"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <com.zoddl.widgets.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_30"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="@string/please_enter_the_otp_send_to_your_registered_mobile_number"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/text_size_18"
+            app:fontName="@string/helvetica_neue_light" />
+
+        <com.zoddl.widgets.PinEntryView
+            android:id="@+id/pin_entry_simple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_20"
+            app:accentRequiresFocus="true"
+            app:accentType="all"
+            app:digitBackground="@drawable/pin_box"
+            app:digitTextColor="@color/colorDarkGray"
+            app:digitTextSize="@dimen/text_size_16"
+            app:numDigits="4"
+            app:pinAccentColor="@color/colorDarkGray"
+            app:pinInputType="number" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.zoddl.widgets.MyTextView
+                android:id="@+id/tv_yes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/dp_12"
+                android:text="@string/submit"
+                android:textColor="@color/colorLightBlue"
+                android:textSize="@dimen/text_size_18"
+                app:fontName="@string/helvetica_neue_normal" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark" />
+
+            <com.zoddl.widgets.MyTextView
+                android:id="@+id/tv_no"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/dp_12"
+                android:text="@string/cancel"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/text_size_18"
+                app:fontName="@string/helvetica_neue_normal" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

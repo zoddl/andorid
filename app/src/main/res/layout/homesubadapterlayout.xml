@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_main_view"
+        android:layout_margin="@dimen/dp_10"
+        app:cardCornerRadius="@dimen/dp_10"
+        android:shadowRadius="@dimen/dp_10"
+        app:cardBackgroundColor="@color/colorWhite"
+        android:background="@drawable/home_alll_details"
+        android:layout_width="140dp"
+        android:layout_height="100dp">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+             <RelativeLayout
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/img_yellow"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|top"
+                    android:layout_margin="@dimen/dp_3"
+                    android:src="@drawable/icon12" />
+
+                 <com.zoddl.widgets.MyTextView
+                     android:id="@+id/tv_cash"
+                     android:paddingLeft="@dimen/dp_5"
+                     android:paddingRight="@dimen/dp_5"
+                     android:paddingTop="@dimen/dp_2"
+                     android:paddingBottom="@dimen/dp_2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:ellipsize="end"
+                     android:maxLines="1"
+                     android:textColor="@color/colorBlack"
+                     android:textSize="@dimen/text_size_12"
+                     app:fontName="@string/helvetica_neue_normal" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:padding="2dp"
+                        android:id="@+id/tv_tag_name"
+                        android:textColor="@color/colorBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="zoddle"/>
+
+
+                <TextView
+                    android:padding="2dp"
+                    android:id="@+id/tv_tag_price"
+                    android:textColor="@color/colorLightGray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs:100"
+                    />
+            </LinearLayout>
+
+      <RelativeLayout
+          android:layout_marginBottom="@dimen/dp_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+          <ImageView
+              android:visibility="gone"
+              android:id="@+id/iv_down_arrow"
+              android:layout_alignParentBottom="true"
+              android:layout_alignParentRight="true"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/icon31"/>
+
+       </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    <!--</android.support.v7.widget.CardView>-->
+
+    </android.support.v7.widget.CardView>
+    </layout>
+

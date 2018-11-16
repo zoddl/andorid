@@ -1,0 +1,362 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<android.support.v4.widget.NestedScrollView
+    android:id="@+id/parent_add_tag_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_background"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <com.zoddl.widgets.MyTextView
+            android:id="@+id/tv_dialog_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp_15"
+            android:text="@string/add_tag"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/text_size_16"
+            app:fontName="@string/helvetica_neue_light" />
+
+            <TextView
+                android:id="@+id/flow_name"
+                android:paddingTop="@dimen/dp_5"
+                android:paddingBottom="@dimen/dp_5"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="right"/>
+        </FrameLayout>
+            <RelativeLayout
+                android:id="@+id/cash_bank_flow_layout_header"
+                android:visibility="gone"
+                android:paddingLeft="@dimen/dp_5"
+                android:paddingBottom="@dimen/dp_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ln_bank"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.zoddl.widgets.MyButton
+                            android:id="@+id/btn_bank_plus"
+                            android:layout_width="80dp"
+                            android:layout_height="35dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_margin="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_camera_green"
+                            android:gravity="center"
+                            android:paddingEnd="5dp"
+                            android:paddingStart="5dp"
+                            android:text="Bank +"
+                            android:textAlignment="center"
+                            android:textColor="#f0f4f5"
+                            android:textSize="@dimen/text_size_12"
+                            app:fontName="@string/helvetica_neue_light"
+
+                            />
+                        <ImageView
+                            android:visibility="invisible"
+                            android:id="@+id/img_bank_plus"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/icon47" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.zoddl.widgets.MyButton
+                            android:id="@+id/btn_bank_mins"
+                            android:layout_width="80dp"
+                            android:layout_height="35dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_below="@+id/btn_bank_plus"
+                            android:layout_margin="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_camera_red"
+                            android:gravity="center"
+                            android:paddingEnd="5dp"
+                            android:paddingStart="5dp"
+                            android:text="Bank -"
+                            android:textAlignment="center"
+                            android:textColor="#148fcc"
+                            android:textSize="@dimen/text_size_12"
+                            app:fontName="@string/helvetica_neue_light" />
+
+                        <ImageView
+                            android:visibility="invisible"
+                            android:id="@+id/img_bank_mins"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/icon47" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln_cash"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.zoddl.widgets.MyButton
+                            android:id="@+id/btn_cash_plus"
+                            style="@style/PresetLayoutButton"
+                            android:layout_width="80dp"
+                            android:layout_height="35dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_margin="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_camera_blue"
+                            android:gravity="center"
+                            android:paddingEnd="5dp"
+                            android:paddingStart="5dp"
+                            android:text="@string/title_time_preset_30"
+                            android:textColor="#d5f5f1"
+                            android:textSize="@dimen/text_size_12"
+                            app:fontName="@string/helvetica_neue_light"
+                            app:presetButtonValueText="@string/title_time_preset_30"
+                            app:presetButtonValueTextColor="@color/colorWhite" />
+
+                        <ImageView
+                            android:visibility="invisible"
+                            android:id="@+id/img_cash_plus"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/icon47" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.zoddl.widgets.MyButton
+                            android:id="@+id/btn_cash_mins"
+                            android:layout_width="80dp"
+                            android:layout_height="35dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_below="@+id/btn_bank_plus"
+                            android:layout_margin="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_camera_yellow"
+                            android:gravity="center"
+                            android:paddingEnd="5dp"
+                            android:paddingStart="5dp"
+                            android:text="@string/title_time_preset_60"
+                            android:textAlignment="center"
+                            android:textColor="#24d4cb"
+                            android:textSize="@dimen/text_size_12"
+                            app:fontName="@string/helvetica_neue_light" />
+
+                        <ImageView
+                            android:visibility="invisible"
+                            android:id="@+id/img_cash_mins"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/icon47" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/relativeLayout">
+
+                    <com.zoddl.widgets.MyButton
+                        android:id="@+id/btn_other"
+                        android:layout_width="60dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/button_camera_gray"
+                        android:text="Other"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorGray"
+                        android:textSize="@dimen/text_size_12"
+                        app:fontName="@string/helvetica_neue_light" />
+
+                    <ImageView
+                        android:visibility="invisible"
+                        android:id="@+id/img_other"
+                        android:layout_margin="5dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon47" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_10">
+        <com.zoddl.widgets.MyTextView
+            android:id="@+id/tv_date_error"
+            style="@style/AppTheme.EditTextError"
+            app:fontName="@string/helvetica_neue_light" />
+
+        <android.support.v7.widget.AppCompatAutoCompleteTextView
+            android:id="@+id/et_tag_name"
+            style="@style/AppTheme.EditText"
+            android:layout_marginTop="@dimen/dp_10"
+            android:hint="@string/tag_name"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLines="1"
+            android:completionThreshold="0"
+            android:theme="@style/Autocomplete"
+            app:fontName="@string/helvetica_neue_light" />
+
+            <com.zoddl.widgets.MyTextView
+                android:id="@+id/tv_tag_name_error"
+                style="@style/AppTheme.EditTextError"
+                app:fontName="@string/helvetica_neue_light" />
+
+        <com.hootsuite.nachos.NachoTextView
+            android:id="@+id/et_sec_tab_name"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            style="@style/AppTheme.EditText"
+            android:hint="@string/add_secondary_tag"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:completionThreshold="0"
+            android:layout_height="wrap_content" />
+
+        <com.zoddl.widgets.MyTextView
+            android:id="@+id/tv_sec_name_error"
+            style="@style/AppTheme.EditTextError"
+            app:fontName="@string/helvetica_neue_light" />
+
+        <com.zoddl.widgets.MyEditText
+            android:id="@+id/et_amount"
+            style="@style/AppTheme.EditText"
+            android:layout_marginTop="@dimen/dp_10"
+            android:hint="@string/amount"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:imeOptions="actionNext"
+            android:maxLength="6"
+            android:inputType="number"
+            android:maxLines="1"
+            app:fontName="@string/helvetica_neue_light" />
+
+            <com.zoddl.widgets.MyTextView
+                android:id="@+id/tv_amount_error"
+                style="@style/AppTheme.EditTextError"
+                app:fontName="@string/helvetica_neue_light" />
+
+        <com.zoddl.widgets.MyTextView
+            android:id="@+id/tv_date"
+            style="@style/AppTheme.EditText"
+            android:hint="@string/date"
+            android:maxLines="1"
+            app:fontName="@string/helvetica_neue_light" />
+
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_10"
+            android:inputType="textMultiLine"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:hint="@string/description" />
+
+        <com.zoddl.widgets.MyTextView
+            android:id="@+id/tv_description_error"
+            style="@style/AppTheme.EditTextError"
+            app:fontName="@string/helvetica_neue_light" />
+
+        <LinearLayout
+            android:layout_marginBottom="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:orientation="horizontal">
+
+            <com.zoddl.widgets.MyButton
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:layout_weight="1"
+                android:background="@drawable/button_gradient_right_blue"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_18"
+                app:fontName="@string/calibri_bold" />
+
+            <com.zoddl.widgets.MyButton
+                android:id="@+id/btn_submit"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_weight="1"
+                android:background="@drawable/button_gradient_right_blue"
+                android:gravity="center"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_18"
+                app:fontName="@string/calibri_bold" />
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+</layout>

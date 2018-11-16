@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_20">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/zoddl_title" />
+
+            <com.zoddl.widgets.MyEditText
+                android:id="@+id/et_email"
+                style="@style/AppTheme.EditText"
+                android:layout_marginTop="@dimen/dp_40"
+                android:drawablePadding="@dimen/dp_5"
+                android:drawableStart="@drawable/icon33"
+                android:hint="@string/email_id_new_user_email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLength="80"
+                android:maxLines="1"
+                app:fontName="@string/helvetica_neue_light" />
+
+            <com.zoddl.widgets.MyTextView
+                android:id="@+id/tv_email_error"
+                style="@style/AppTheme.EditTextError"
+                app:fontName="@string/helvetica_neue_light" />
+
+            <com.zoddl.widgets.MyEditText
+                android:id="@+id/et_password"
+                style="@style/AppTheme.EditText"
+                android:layout_marginTop="@dimen/dp_20"
+                android:drawablePadding="@dimen/dp_5"
+                android:drawableStart="@drawable/icon52"
+                android:hint="@string/password_new_user_password"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                app:fontName="@string/helvetica_neue_light" />
+
+            <com.zoddl.widgets.MyTextView
+                android:id="@+id/tv_password_error"
+                style="@style/AppTheme.EditTextError"
+                android:visibility="gone"
+                app:fontName="@string/helvetica_neue_light" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_15"
+                android:orientation="horizontal">
+                <com.zoddl.widgets.MyCheckBox
+                    android:id="@+id/cb_rememberme"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/checkbox_selector"
+                    android:gravity="center|start"
+                    android:paddingBottom="@dimen/dp_5"
+                    android:paddingTop="@dimen/dp_5"
+                    android:text="@string/remember_me"
+                    android:textColor="@color/colorNavyBlue"
+                    android:textSize="14sp"
+                    app:fontName="@string/helvetica_neue_light" />
+                <com.zoddl.widgets.MyTextView
+                    android:id="@+id/tv_forgot_password"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:paddingBottom="@dimen/dp_5"
+                    android:paddingTop="@dimen/dp_5"
+                    android:text="@string/forgot_password"
+                    android:textColor="@color/colorNavyBlue"
+                    android:textSize="14sp"
+                    app:fontName="@string/helvetica_neue_light" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:orientation="horizontal">
+
+                <com.zoddl.widgets.MyButton
+                    android:id="@+id/btn_sign_up"
+                    style="@style/AppTheme.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_gradient_left_blue"
+                    android:text="@string/sign_up"
+                    app:fontName="@string/calibri_bold" />
+
+                <com.zoddl.widgets.MyButton
+                    android:id="@+id/btn_log_in"
+                    style="@style/AppTheme.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:layout_weight="1"
+                    android:text="@string/log_in"
+                    app:fontName="@string/calibri_bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorNavyBlue" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_10"
+                    android:text="@string/or"
+                    android:textColor="@color/colorNavyBlue"
+                    android:textStyle="bold"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorNavyBlue" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_fb_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/icon54" />
+
+            <Button
+                android:id="@+id/btn_gmail_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/icon55"/>
+        </LinearLayout>
+    </ScrollView>
+</layout>
